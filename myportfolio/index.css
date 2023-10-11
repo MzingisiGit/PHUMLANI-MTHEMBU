@@ -1,0 +1,11 @@
+header{
+    height: 130px;
+}
+
+body{
+    min-height: 100hv;
+}
+
+.main-body{
+    min-height: 80vh;
+}

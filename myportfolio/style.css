@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100hv;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 20px;
+    
+    z-index: 100000;
+    /*backdrop-filter: blur(50px);*/
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px 20px;
+}
+
+ header.sticky
+ {
+    padding: 2px 20px;
+    /*background:#96171B;*/
+    background-color: rgb(17, 17, 17);
+    height: 80px;
+    backdrop-filter: blur(50px);
+    color: rgb(20, 107, 220);
+ }
+
+header .logo{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: 700;
+    color: rgb(32, 181, 192);
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #e2e2e2;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.header ul li a#onlink {
+    background-color: rgb(225, 65, 65);
+    color: rgba(224, 20, 20, 0.432);
+}
+.logo-text1{
+    color: #e5e5e5;
+    font-size: 2.3rem;
+    font-family: 'Lilita One', cursive;
+    font-weight: 500;
+}
+
+.logo-text2{
+    color: rgb(32, 181, 192);
+    text-shadow:
+    -1px -1px 0 #e5e5e5,  
+    1px -1px 0 #4b4b4b,
+    -1px 1px 0 #e5e5e5,
+    1px 1px 0 #e5e5e5;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+header.sticky ul li a{
+    color: rgb(32, 181, 192);
+}
+
+.welcomemessage{
+    color: #000000;
+    position: relative;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.homemaindiv2{
+    /*background-image: url("res/mainheaderbackgrounds/redbackground.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.header-name{
+    font-size: 4rem;
+}
+.header-text{
+
+    text-align: center;
+}
+.home-header{
+    background: blue;
+    height: 500px;
+    justify-content: space-evenly;
+    padding-top: 70px;
+}
+.intro-div-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background: rgb(20, 107, 220);*/
+    background: rgb(32, 181, 192);
+    padding: 20px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.intro-text h1{
+    font-size: 3.4rem;
+}
+
+.main-body{
+    background-color: aqua;
+    background-image: url(res/darkabsreact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+    /*position: absolute;*/
+     /*top: 40px; Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 100%;
+    min-height: 100hv;
+    background-attachment: fixed;
+}
+
+.conainer{
+    background-color: rgba(236, 236, 236, 0.815);
+    backdrop-filter: blur(1px);
+    padding: 5%;
+    color: rgb(12, 67, 71);
+    border-radius: 3px;
+}
+.summary-conainer{
+    text-align: center;
+    color: rgb(10, 55, 58);
+    
+}
+.summary-conainer p{
+    font-size: 1.4rem;
+    color: rgb(3, 19, 20);
+}
+.summary-conainer h1{
+    font-size: 2.4rem;
+    font-family: 'Lilita One', cursive;
+}
+.links-container{
+    background-color: chartreuse;
+    text-align: center;
+}
+
+.page-header{
+    height: 150px;
+    background-color: rgb(32, 181, 192);
+    text-align: center;
+    padding: 120px;
+}
+
+.page-header h1{
+    font-weight: 600;
+}
+
+.centered-contents-div{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin-bottom: 100px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.content-table thead tr{
+    background-color: #9f0101;
+    color: #e5e5e5;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: rgba(136, 136, 136, 0.918);
+    backdrop-filter: blur(3px);
+    color: rgb(8, 40, 43);
+}
+
+.content-table tbody tr:nth-of-type(odd){
+    background-color: rgba(212, 212, 212, 0.63);
+    color: rgb(9, 53, 56);
+    backdrop-filter: blur(3px);
+}
+
+
+.content-table tbody tr{
+    border: 2px solid rgb(20, 106, 112);
+}
+
+.images-div{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.profile-photo{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 3px;
+}
+.images-div img:not(:last-child) {
+    margin-bottom: 50px;
+}  
+.images-div:not(:last-child) {
+    margin-bottom: 140px;
+}  
